@@ -9,16 +9,14 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Webpack demo",
+      title: "Webpack project",
       template: "./src/index.html",
     }),
   ],
 
   output: {
     filename: "[name].bundle.js",
-
     path: path.resolve(__dirname, "dist"),
-
     clean: true,
   },
   module: {
@@ -30,7 +28,6 @@ module.exports = {
 
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-
         type: "asset/resource",
       },
 
